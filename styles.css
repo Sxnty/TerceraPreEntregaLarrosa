@@ -18,3 +18,16 @@ main form button {
     border-radius: .25rem;
     color: black;
 }
+.loan__card {
+    border: 1px solid black;
+    padding: 1rem;
+}
+#loanContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.goBack {
+    margin:1rem 0;
+    padding: 1rem 2rem;
+}
