@@ -3,6 +3,9 @@ const AdminLogin = {
   password: "admin",
 };
 var prestamos = [];
+const logOut = () => {
+    location.reload();
+}
 const loginAdmin = () => {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
@@ -100,6 +103,7 @@ const menuAdministrador = () => {
     `;
   document.getElementById("addLoan").addEventListener("click", addLoan);
   document.getElementById("loanHistory").addEventListener("click", loanHistory);
+  document.getElementById("logOut").addEventListener("click", logOut)
 };
 let button = document.getElementById("submit__button");
 button.addEventListener("click", loginAdmin);
